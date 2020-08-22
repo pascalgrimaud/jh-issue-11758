@@ -1,0 +1,20 @@
+application {
+    config {
+        applicationType monolith
+        authenticationType oauth2
+        baseName inventory
+        buildTool gradle
+        devDatabaseType mssql
+        enableSwaggerCodegen true
+        enableTranslation false
+        messageBroker kafka
+        packageName io.github.pascalgrimaud
+        prodDatabaseType mssql
+        searchEngine elasticsearch
+        serverPort 8002
+        testFrameworks [protractor, cucumber, gatling]
+        useSass true
+        websocket spring-websocket
+    }
+    entities *
+}
